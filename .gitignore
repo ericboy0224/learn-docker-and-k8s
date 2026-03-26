@@ -15,6 +15,6 @@ Thumbs.db
 # Docker build artifacts that might be created during challenges
 node_modules/
 *.log
-
+.history/
 # Research materials (not needed for the game itself)
 # learn-devops/
