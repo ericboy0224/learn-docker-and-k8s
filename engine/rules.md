@@ -90,11 +90,68 @@ When verifying a challenge:
 
 ## Language Rules
 
-- Detect the player's language from their first message
-- Respond in their language for explanations and story
-- ALL technical terms stay in English: Docker, container, image, Dockerfile, volume, network, bridge, port, pod, service, deployment, namespace, ingress, configmap, secret, node, cluster, kubectl, etc.
-- Command examples are always in English (they're commands)
-- Error messages should be shown as-is (English)
+### Detection
+- Detect the player's language from their **first message**
+- If the first message is ambiguous (e.g., just "start" or "play"), check:
+  1. `.player/progress.yaml` → `player.language` field (if set from a previous session)
+  2. The system locale if accessible (e.g., `$LANG` environment variable)
+  3. Default to English if nothing is detected
+- Once detected, record the language in `.player/progress.yaml` → `player.language`
+  - Use IETF language tags: `en`, `zh-TW`, `zh-CN`, `ja`, `ko`, `es`, `fr`, `de`, `pt-BR`, etc.
+
+### Response Language
+- **All narrative, explanations, hints, and debriefs** must be in the player's language
+- **All technical terms stay in English**, regardless of conversation language:
+  Docker, container, image, Dockerfile, volume, network, bridge, port, pod,
+  service, deployment, namespace, ingress, configmap, secret, node, cluster,
+  kubectl, health check, rolling update, replica, label, selector, etc.
+- **Command examples** are always in English (they're shell commands)
+- **Error messages** shown as-is (English) — then explain in the player's language
+- **Character names** stay the same: Sarah, Dave, Marcus (they're fictional English names)
+- **Chapter titles** stay in English (they're proper nouns of the game)
+
+### Mixed-Language Examples
+
+For a `zh-TW` player, a lesson should look like:
+```
+Sarah: 好的，我們來看看 container 為什麼跑不起來。
+
+先用 `docker ps -a` 看一下所有 container 的狀態：
+（demonstrates command and output）
+
+看到了嗎？Status 那欄顯示 "Exited (1)"，這代表 container 啟動後立刻
+crash 了。Exit code 1 通常表示應用程式本身出了問題。
+
+我們可以用 `docker logs learn-ch01-nginx` 看看裡面發生了什麼事...
+```
+
+For a `ja` player:
+```
+Sarah: では、なぜ container が動かないか見てみましょう。
+
+まず `docker ps -a` で全ての container の状態を確認します：
+（demonstrates command and output）
+
+見えますか？Status 列に "Exited (1)" と表示されています。
+これは container が起動直後に crash したことを意味します。
+```
+
+For an `en` player:
+```
+Sarah: Alright, let's figure out why this container won't start.
+
+First, let's check all container statuses with `docker ps -a`:
+（demonstrates command and output）
+
+See that? The Status column shows "Exited (1)" — that means the container
+started and immediately crashed. Exit code 1 usually means the application
+itself hit an error.
+```
+
+### Language Switch
+- If the player switches language mid-conversation, follow along
+- Update `progress.yaml` with the new language
+- Do not ask "which language do you prefer?" — just adapt naturally
 
 ## Post-Mission Debrief Format
 

@@ -19,15 +19,21 @@ Read `.player/progress.yaml` to determine if this is a new or returning player.
 
 ### New Player (started_at is empty)
 
-1. Run `bash engine/environment-check.sh` to verify their setup
-2. If checks fail, guide them to fix issues before continuing
-3. Update `.player/progress.yaml` with:
+1. **Detect language:** Identify the player's language from their first message.
+   - If clear (e.g., "開始吧" → zh-TW, "はじめよう" → ja, "let's play" → en), record it
+   - If ambiguous (e.g., just "start"), check `$LANG` env variable as a hint, otherwise default to en
+   - Record in `.player/progress.yaml` → `player.language` using IETF tags (en, zh-TW, ja, ko, etc.)
+2. Run `bash engine/environment-check.sh` to verify their setup
+3. If checks fail, guide them to fix issues before continuing (in their language)
+4. Update `.player/progress.yaml` with:
    - `started_at`: today's date
+   - `language`: detected language tag
    - `environment.docker`: Docker version
    - `environment.compose`: Compose version
    - `environment.os`: their OS
-4. Welcome them to NoCappuccino! Deliver the Chapter 1 opening (read `curriculum/ch01-containers/README.md`)
-5. Ask: "Ready to start with the lesson, or want to jump straight to the challenge?"
+5. Welcome them to NoCappuccino! Deliver the Chapter 1 opening (read `curriculum/ch01-containers/README.md`)
+   - Narrate in their language, but keep technical terms and chapter titles in English
+6. Ask: "Ready to start with the lesson, or want to jump straight to the challenge?"
 
 ### Returning Player
 
