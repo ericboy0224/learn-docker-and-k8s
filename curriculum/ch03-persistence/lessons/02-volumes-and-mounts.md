@@ -117,12 +117,12 @@ docker run -d \
   --name learn-ch03-node-app \
   --label app=learn-docker-k8s \
   --label chapter=ch03 \
-  -v /Users/eric/my-app:/app \
+  -v ~/my-app:/app \
   -p 3000:3000 \
   node:20-alpine node /app/index.js
 ```
 
-Here, `/Users/eric/my-app` on the host is mounted at `/app` inside the container. If you edit `index.js` on your host, the container sees the change instantly. This is the foundation of hot-reload development workflows.
+Here, `~/my-app` on the host is mounted at `/app` inside the container. If you edit `index.js` on your host, the container sees the change instantly. This is the foundation of hot-reload development workflows.
 
 ### The `--mount` syntax (more explicit)
 
@@ -133,7 +133,7 @@ docker run -d \
   --name learn-ch03-node-app \
   --label app=learn-docker-k8s \
   --label chapter=ch03 \
-  --mount type=bind,source=/Users/eric/my-app,target=/app \
+  --mount type=bind,source=$HOME/my-app,target=/app \
   -p 3000:3000 \
   node:20-alpine node /app/index.js
 ```
@@ -209,7 +209,7 @@ Docker infers the mount type from the format of the `-v` argument:
 -v learn-ch03-db-data:/var/lib/mysql
 
 # Bind mount (starts with / or ./)
--v /Users/eric/my-app:/app
+-v ~/my-app:/app
 -v ./my-app:/app
 
 # Anonymous volume (just a path)
