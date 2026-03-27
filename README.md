@@ -37,7 +37,7 @@ all the way to triaging a Kubernetes production incident at 3 AM.
 ```
 
 1. Clone this repo
-2. Open it in [Claude Code](https://claude.ai/code), [Cursor](https://cursor.com), or any AI editor
+2. Open it in any AI editor ([Claude Code](https://claude.ai/code), [Cursor](https://cursor.com), [Windsurf](https://windsurf.com), [Copilot](https://github.com/features/copilot), [Cline](https://cline.bot), [Codex](https://openai.com/index/codex-cli), [Gemini CLI](https://github.com/google-gemini/gemini-cli), etc.)
 3. Type **"let's play"**
 4. Learn by doing
 
@@ -112,7 +112,9 @@ Along the way you'll naturally pick up **Linux fundamentals** (namespaces, cgrou
   |  [x] Docker              [ ] kubectl           |
   |  [x] Docker Compose v2   [ ] kind              |
   |  [x] AI editor                                 |
-  |      (Claude Code / Cursor)                    |
+  |      (Claude Code, Cursor,                     |
+  |       Windsurf, Copilot, Cline,                |
+  |       Codex CLI, Gemini CLI, etc.)             |
   '------------------------------------------------'
 ```
 
@@ -178,10 +180,16 @@ That's it. The AI handles everything else.
 
 ```
   .
-  |-- CLAUDE.md                <-- AI reads this first
-  |-- .cursorrules             <-- Cursor users' entry point
+  |-- AGENTS.md                <-- AI reads this first (universal)
+  |-- CLAUDE.md                <-- Claude Code entry point + skills
+  |-- GEMINI.md                <-- Gemini CLI entry point
+  |-- .cursorrules             <-- Cursor entry point
+  |-- .clinerules              <-- Cline / Roo Code entry point
+  |-- .windsurfrules           <-- Windsurf entry point
+  |-- .github/
+  |   '-- copilot-instructions.md  <-- GitHub Copilot entry point
   |
-  |-- .claude/skills/          <-- game commands
+  |-- .claude/skills/          <-- game commands (Claude Code)
   |   |-- play/                    /play
   |   |-- hint/                    /hint
   |   |-- verify/                  /verify
