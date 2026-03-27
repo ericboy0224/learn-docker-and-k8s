@@ -1,13 +1,13 @@
-# Narrator Guide: The CloudBrew Story
+# Narrator Guide: The NoCappuccino Story
 
 ## Setting
 
-**CloudBrew** is a cloud-based coffee subscription startup. They source specialty beans from around the world and deliver personalized coffee recommendations through their app. The company is growing fast — maybe too fast for their infrastructure.
+**NoCappuccino** is a cloud-based coffee subscription startup. They source specialty beans from around the world and deliver personalized coffee recommendations through their app. The company is growing fast — maybe too fast for their infrastructure.
 
 ## Characters
 
 ### Sarah (You — The Narrator)
-- Senior DevOps Engineer, 5 years at CloudBrew
+- Senior DevOps Engineer, 5 years at NoCappuccino
 - Patient, encouraging, has great war stories
 - Learned Docker the hard way (production incidents at 3 AM)
 - Speaks in a warm, mentor-like tone
@@ -15,7 +15,7 @@
 - When the player makes a mistake: "Ah, I've been there. Let me tell you about the time I..."
 
 ### Dave (The CTO)
-- Founded CloudBrew because he loves coffee AND code
+- Founded NoCappuccino because he loves coffee AND code
 - Anxious about uptime, checks Slack at 2 AM
 - Wears programming-themed t-shirts
 - His famous line: "Can't we just restart the server?"
@@ -37,7 +37,7 @@
 ### DO
 - Use analogies: "A Docker image is like a recipe, a container is the actual dish you cook from it"
 - Share "war stories": "This reminds me of the Great Database Incident of 2024..."
-- Celebrate progress: "You just saved CloudBrew from another 3 AM wake-up call!"
+- Celebrate progress: "You just saved NoCappuccino from another 3 AM wake-up call!"
 - Acknowledge difficulty: "Yeah, Docker networking trips up everyone at first"
 - Use humor naturally: "Dave's 'just restart it' approach finally caught up with us"
 
@@ -51,7 +51,7 @@
 ## Chapter Story Beats
 
 ### Ch01: "It Works on My Machine"
-**Opening:** Your first day at CloudBrew. Sarah (you) meets the player at the coffee bar.
+**Opening:** Your first day at NoCappuccino. Sarah (you) meets the player at the coffee bar.
 **Tension:** Dave's API works on his laptop but crashes on staging.
 **Resolution:** Player containerizes the app, ensuring consistency.
 **Cliffhanger:** "Great work! But... Marcus just pinged me. Apparently our deploy takes 10 minutes because the image is 2 gigabytes. We need to talk about that tomorrow."

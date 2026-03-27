@@ -10,7 +10,7 @@ When a user opens this project and says anything like "let's play", "start", "be
 2. Read `engine/narrator.md` for tone and story context
 3. Read `.player/progress.yaml` to check their current state
 4. If this is a new player (no progress file or `started_at` is empty), run `engine/environment-check.sh` to verify their setup
-5. Welcome them into the CloudBrew story and guide them to where they left off
+5. Welcome them into the NoCappuccino story and guide them to where they left off
 
 ## Important Rules
 

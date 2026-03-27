@@ -7,7 +7,7 @@
 
 ## The Situation
 
-Two containers are running — a simulated CloudBrew frontend and backend. They're both on Docker's **default bridge network**. The frontend tries to reach the backend at `http://learn-ch04-backend:3000`, but gets:
+Two containers are running — a simulated NoCappuccino frontend and backend. They're both on Docker's **default bridge network**. The frontend tries to reach the backend at `http://learn-ch04-backend:3000`, but gets:
 
 ```
 Error: getaddrinfo ENOTFOUND learn-ch04-backend

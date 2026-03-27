@@ -4,7 +4,7 @@
 
 Dave did it again.
 
-At 5 AM, still riding the adrenaline of surviving the traffic spike, he decided to "help" by updating the CloudBrew deployment manifest himself. He typed fast, committed without reviewing, and now the Pods are stuck in `ImagePullBackOff`.
+At 5 AM, still riding the adrenaline of surviving the traffic spike, he decided to "help" by updating the NoCappuccino deployment manifest himself. He typed fast, committed without reviewing, and now the Pods are stuck in `ImagePullBackOff`.
 
 Dave's message came in at 5:12 AM: "Sarah I think I may have broken something small."
 

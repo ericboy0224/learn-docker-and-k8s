@@ -23,7 +23,7 @@
 
 ## The Story So Far
 
-You survived Chapter 6. You built a Kubernetes cluster, deployed the CloudBrew app with proper Deployments and Services, and watched K8s self-heal right in front of you. Dave was so impressed he sent a thumbs-up GIF. Marcus updated the roadmap to include "K8s stuff" as a Q3 priority. Everything was good.
+You survived Chapter 6. You built a Kubernetes cluster, deployed the NoCappuccino app with proper Deployments and Services, and watched K8s self-heal right in front of you. Dave was so impressed he sent a thumbs-up GIF. Marcus updated the roadmap to include "K8s stuff" as a Q3 priority. Everything was good.
 
 That was yesterday.
 
@@ -160,7 +160,7 @@ At 9:14 AM, a Slack message comes in from an unknown number.
 
 **@dave**: `actually I don't need to know how. I just need to know it's fixed. good work team`
 
-**@dave**: `going to get a coffee. they have a CloudBrew kiosk here btw`
+**@dave**: `going to get a coffee. they have a NoCappuccino kiosk here btw`
 
 Sarah reads it aloud. She smiles. "See, I told you. Typical Dave."
 

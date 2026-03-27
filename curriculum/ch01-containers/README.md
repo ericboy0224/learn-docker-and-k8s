@@ -21,13 +21,13 @@
 
 ## The Story So Far
 
-Welcome to CloudBrew — your first day on the job.
+Welcome to NoCappuccino — your first day on the job.
 
 You've barely found the coffee bar when Dave, our CTO (currently wearing his "I ❤️ Java" shirt), slides over looking like he hasn't slept. He pulls up Slack on his phone and shows you a wall of red error logs.
 
 > **Dave:** "The Aroma-Discovery API works perfectly on my laptop. I swear. But every time we push to staging it crashes with some Node version mismatch. I've been telling the server team to just install the right library but they keep saying 'it's not a server problem.'"
 
-I'm Sarah — senior DevOps here at CloudBrew. Don't mind Dave. He's great at product, but his idea of "deployment" is copy-pasting files over SSH. We're going to fix this the right way.
+I'm Sarah — senior DevOps here at NoCappuccino. Don't mind Dave. He's great at product, but his idea of "deployment" is copy-pasting files over SSH. We're going to fix this the right way.
 
 If the API isn't up by lunch, our first 500 coffee subscribers get a 404 instead of their morning fix. Marcus, our PM, is already asking questions. So: no pressure, but also... definitely some pressure.
 

@@ -8,7 +8,7 @@ Let's do that now with a tiny Node.js app.
 
 ## The Situation
 
-Dave's Aroma-Discovery API is complex, but the concept is the same for any Node app. We're going to build a simplified version — a "Hello CloudBrew" server — and Dockerize it from scratch. You'll create the app files, write the Dockerfile, build the image, and run it.
+Dave's Aroma-Discovery API is complex, but the concept is the same for any Node app. We're going to build a simplified version — a "Hello NoCappuccino" server — and Dockerize it from scratch. You'll create the app files, write the Dockerfile, build the image, and run it.
 
 ---
 
@@ -22,7 +22,7 @@ Create a directory for this challenge and add these two files exactly as shown.
 {
   "name": "cloudbrew-api",
   "version": "1.0.0",
-  "description": "CloudBrew Hello API",
+  "description": "NoCappuccino Hello API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -41,15 +41,15 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello from CloudBrew!');
+  res.send('Hello from NoCappuccino!');
 });
 
 app.listen(PORT, () => {
-  console.log(`CloudBrew API running on port ${PORT}`);
+  console.log(`NoCappuccino API running on port ${PORT}`);
 });
 ```
 
-That's it — a five-line Express server that listens on port 3000 and responds with "Hello from CloudBrew!" at the root path.
+That's it — a five-line Express server that listens on port 3000 and responds with "Hello from NoCappuccino!" at the root path.
 
 ---
 
@@ -92,7 +92,7 @@ curl http://localhost:3000
 
 Expected output:
 ```
-Hello from CloudBrew!
+Hello from NoCappuccino!
 ```
 
 ---

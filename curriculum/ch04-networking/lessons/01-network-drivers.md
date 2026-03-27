@@ -214,7 +214,7 @@ docker network prune --filter "label=app=learn-docker-k8s"
 
 The default bridge network gives containers connectivity but not discoverability. User-defined bridge networks add Docker's embedded DNS, so containers find each other by name — not brittle IPs.
 
-That's the root cause of the "host not found" error at CloudBrew. The fix is in the next lesson.
+That's the root cause of the "host not found" error at NoCappuccino. The fix is in the next lesson.
 
 ---
 

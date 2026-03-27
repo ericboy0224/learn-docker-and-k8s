@@ -71,7 +71,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('CloudBrew Frontend - Bean selection interface v1.0\n');
+  res.send('NoCappuccino Frontend - Bean selection interface v1.0\n');
 });
 
 app.listen(port, () => {

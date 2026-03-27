@@ -1,7 +1,7 @@
 # Lesson 03: Volume Lifecycle
 
 > "The volume doesn't care about your container. It was there before it, and it'll be there after."
-> — Sarah, CloudBrew DevOps
+> — Sarah, NoCappuccino DevOps
 
 ---
 
@@ -43,7 +43,7 @@ A single named volume can be mounted by multiple containers simultaneously. This
 
 ### Read/Write sharing
 
-Imagine CloudBrew's image upload service writes photos to a shared directory, and a thumbnail generator service reads from the same directory:
+Imagine NoCappuccino's image upload service writes photos to a shared directory, and a thumbnail generator service reads from the same directory:
 
 ```bash
 # Container 1: writes uploaded images

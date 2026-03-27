@@ -163,7 +163,7 @@ Containers are not a VM replacement in every case. Here's a practical guide:
 - You need to run a full OS for OS-level testing
 - Regulatory requirements mandate hardware-level isolation
 
-In practice at CloudBrew, we run our apps in containers and those containers run *inside* VMs on our cloud provider. You get the operational benefits of both.
+In practice at NoCappuccino, we run our apps in containers and those containers run *inside* VMs on our cloud provider. You get the operational benefits of both.
 
 ---
 

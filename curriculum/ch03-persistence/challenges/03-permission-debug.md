@@ -7,7 +7,7 @@
 
 ## Situation
 
-The CloudBrew ops team has a security policy: no production containers run as root. Dave got the memo and added a `USER` directive to the preferences API Dockerfile.
+The NoCappuccino ops team has a security policy: no production containers run as root. Dave got the memo and added a `USER` directive to the preferences API Dockerfile.
 
 Then the app stopped writing logs.
 
@@ -43,7 +43,7 @@ CMD ["node", "index.js"]
 And the `index.js` it uses:
 
 ```javascript
-// index.js — CloudBrew Logger (intentionally broken)
+// index.js — NoCappuccino Logger (intentionally broken)
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
@@ -70,7 +70,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`CloudBrew Logger listening on port ${PORT}`);
+  console.log(`NoCappuccino Logger listening on port ${PORT}`);
 });
 ```
 

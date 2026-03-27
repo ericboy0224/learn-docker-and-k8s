@@ -88,7 +88,7 @@ The Control Plane is the brain of the cluster. In production it runs on dedicate
 **API Server (`kube-apiserver`)**
 The single entry point for all cluster operations. Every command you run with `kubectl` is an HTTP request to the API Server. It validates requests, authenticates them, and stores the results in etcd.
 
-Think of it as the reception desk at CloudBrew HQ. Nothing happens without going through it.
+Think of it as the reception desk at NoCappuccino HQ. Nothing happens without going through it.
 
 **etcd**
 A distributed key-value store that holds the entire cluster state. Every resource — every Pod definition, every Service, every config — lives in etcd.

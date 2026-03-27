@@ -1,7 +1,7 @@
 # Lesson 02: Volumes and Mounts
 
 > "There are three ways to give a container persistent storage. Knowing when to use each one is half the job."
-> — Sarah, CloudBrew DevOps
+> — Sarah, NoCappuccino DevOps
 
 ---
 

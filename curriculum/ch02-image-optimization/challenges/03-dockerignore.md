@@ -53,7 +53,7 @@ cat > challenges/big-context/src/index.js << 'EOF'
 const http = require('http');
 const server = http.createServer((req, res) => {
   res.writeHead(200);
-  res.end('CloudBrew - Roasting microservice v2.0\n');
+  res.end('NoCappuccino - Roasting microservice v2.0\n');
 });
 server.listen(3000, () => console.log('Running on :3000'));
 EOF

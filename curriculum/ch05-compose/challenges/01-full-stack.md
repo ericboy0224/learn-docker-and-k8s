@@ -11,7 +11,7 @@ Dave just hired two more developers. One of them spent yesterday asking Marcus w
 
 Sarah has had enough.
 
-The entire CloudBrew application stack is sitting in the `app/` directory of this challenge. Your job is to write a `docker-compose.yml` that brings the whole thing up with a single `docker compose up -d`.
+The entire NoCappuccino application stack is sitting in the `app/` directory of this challenge. Your job is to write a `docker-compose.yml` that brings the whole thing up with a single `docker compose up -d`.
 
 ---
 
@@ -170,7 +170,7 @@ CMD ["node", "server.js"]
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CloudBrew — Specialty Coffee</title>
+  <title>NoCappuccino — Specialty Coffee</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -204,7 +204,7 @@ CMD ["node", "server.js"]
 </head>
 <body>
   <header>
-    <h1>CloudBrew</h1>
+    <h1>NoCappuccino</h1>
     <p>Specialty Coffee Subscriptions</p>
   </header>
   <main>
@@ -344,7 +344,7 @@ And the frontend should be accessible:
 
 ```bash
 curl -sf http://localhost:8080
-# Should return HTML with "CloudBrew" in it
+# Should return HTML with "NoCappuccino" in it
 ```
 
 And the backend health endpoint:

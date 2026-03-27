@@ -144,7 +144,7 @@ docker inspect learn-ch05-postgres-1 --format '{{.State.Health.Status}}'
 
 ## Putting It Together — A Complete Example
 
-Here is the CloudBrew backend waiting for Postgres to be genuinely ready:
+Here is the NoCappuccino backend waiting for Postgres to be genuinely ready:
 
 ```yaml
 name: learn-ch05

@@ -1,7 +1,7 @@
 # Lesson 01: Ephemeral Containers
 
 > "Dave's 'just restart it' approach finally caught up with us."
-> — Sarah, CloudBrew DevOps
+> — Sarah, NoCappuccino DevOps
 
 ---
 
@@ -45,12 +45,12 @@ Let's prove it. In teaching mode, run these commands together:
 docker run --name learn-ch03-demo \
   --label app=learn-docker-k8s \
   --label chapter=ch03 \
-  alpine sh -c "mkdir -p /data && echo 'CloudBrew secret recipe' > /data/recipe.txt && cat /data/recipe.txt"
+  alpine sh -c "mkdir -p /data && echo 'NoCappuccino secret recipe' > /data/recipe.txt && cat /data/recipe.txt"
 ```
 
 Output:
 ```
-CloudBrew secret recipe
+NoCappuccino secret recipe
 ```
 
 The file exists. The container exits because `sh -c` finishes.

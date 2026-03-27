@@ -1,6 +1,6 @@
-# CloudBrew Narrative Storyline
+# NoCappuccino Narrative Storyline
 
-Welcome to the team at **CloudBrew**! I’m Sarah, your senior dev. I’ve seen enough "it works on my machine" shrugs to last a lifetime, so we’re moving everything to containers. Grab a dark roast, and let’s get this startup airborne.
+Welcome to the team at **NoCappuccino**! I’m Sarah, your senior dev. I’ve seen enough "it works on my machine" shrugs to last a lifetime, so we’re moving everything to containers. Grab a dark roast, and let’s get this startup airborne.
 
 ### Chapter 1: The "It Works on My Machine" Curse
 **The Story:** Our anxious CTO, Dave, is sweating through his "I ❤️ Java" shirt. The "Aroma-Discovery" API works for him, but when we tried to move it to staging, it crashed because the server had the wrong version of Node. Dave’s solution? "Just install the library on the server!" No, Dave. We use Docker now.
@@ -35,7 +35,7 @@ Welcome to the team at **CloudBrew**! I’m Sarah, your senior dev. I’ve seen 
 *   **Troubleshooting:** Using `docker network inspect` to see who's actually on the network and `curl` to test connectivity from the inside.
 
 ### Chapter 5: The Symphony of Steam (Docker Compose)
-**The Story:** CloudBrew is growing. We now have a Frontend, a Backend, a Redis cache, and a Mail-Service. Sarah is tired of typing 15 `docker run` commands in the right order. Dave wants a single "on" button for the whole it infrastructure.
+**The Story:** NoCappuccino is growing. We now have a Frontend, a Backend, a Redis cache, and a Mail-Service. Sarah is tired of typing 15 `docker run` commands in the right order. Dave wants a single "on" button for the whole it infrastructure.
 **The Stakes:** Every time a new dev joins, it takes them three days just to set up their environment. We need a "Docker Big Bang" command.
 **The Challenge:** Create a `docker-compose.yml` that handles the whole stack, secrets, and startup order.
 **The Lessons:**
@@ -52,7 +52,7 @@ Welcome to the team at **CloudBrew**! I’m Sarah, your senior dev. I’ve seen 
 
 ### Chapter 7: The Great Latte Leak (Production Chaos)
 **The Story:** It’s the "Chaos Finale". Everything is going wrong at once: someone pushed an image with the `latest` tag and it broke the API, a rogue process is eating all the memory, and our database credentials were found in a public Docker log.
-**The Stakes:** The site is down, the CTO is on a flight with no Wi-Fi, and it’s up to you to save CloudBrew before the morning rush.
+**The Stakes:** The site is down, the CTO is on a flight with no Wi-Fi, and it’s up to you to save NoCappuccino before the morning rush.
 **The Challenge:** Triage the disaster. Use `kubectl logs`, `describe`, and `exec` to find the mismatched labels, fix the **ImagePullBackOff**, and set **Resource Limits** to stop the memory leak.
 **The Lessons:**
 *   **Advanced Ops:** **Rolling Updates** for zero-downtime fixes, **RBAC** to lock down the cluster, and interpreting **Exit Code 137** to realize you need more RAM.

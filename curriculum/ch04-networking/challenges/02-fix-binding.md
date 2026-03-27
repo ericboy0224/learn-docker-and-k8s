@@ -36,7 +36,7 @@ const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'application/json' });
   res.end(JSON.stringify({
     status: 'ok',
-    message: 'CloudBrew API v1.0',
+    message: 'NoCappuccino API v1.0',
     timestamp: new Date().toISOString()
   }));
 });
@@ -93,7 +93,7 @@ curl http://localhost:3000
 Fix the application so that `curl http://localhost:3000` from the **host machine** returns:
 
 ```json
-{"status":"ok","message":"CloudBrew API v1.0","timestamp":"..."}
+{"status":"ok","message":"NoCappuccino API v1.0","timestamp":"..."}
 ```
 
 ---

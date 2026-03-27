@@ -7,7 +7,7 @@
 
 ## The Problem with `docker run`
 
-Let's count what it takes to start CloudBrew's stack manually, right now.
+Let's count what it takes to start NoCappuccino's stack manually, right now.
 
 First, create the network:
 ```bash
@@ -102,7 +102,7 @@ networks:   # The networks connecting them
 volumes:    # The persistent storage
 ```
 
-Here is the full CloudBrew stack as a Compose file:
+Here is the full NoCappuccino stack as a Compose file:
 
 ```yaml
 # docker-compose.yml

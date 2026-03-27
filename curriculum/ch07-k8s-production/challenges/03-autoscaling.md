@@ -6,7 +6,7 @@
 
 ## The Situation
 
-The `learn-frontend` Deployment is running at 2 replicas after the update in Challenge 2. Right now traffic is quiet. But Marcus just forwarded a notification: the CloudBrew kiosk at Heathrow airport (where Dave got his coffee) went viral on social media. Traffic is about to spike.
+The `learn-frontend` Deployment is running at 2 replicas after the update in Challenge 2. Right now traffic is quiet. But Marcus just forwarded a notification: the NoCappuccino kiosk at Heathrow airport (where Dave got his coffee) went viral on social media. Traffic is about to spike.
 
 You need to configure autoscaling so that Kubernetes handles the spike automatically, without anyone having to SSH into anything or change a replica count by hand.
 

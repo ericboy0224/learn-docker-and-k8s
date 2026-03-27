@@ -245,7 +245,7 @@ If your passwords are in there, anyone with Docker access can see them. This is 
 
 ## A Complete Secure Setup
 
-Here is the full picture for a secure CloudBrew Compose file:
+Here is the full picture for a secure NoCappuccino Compose file:
 
 **`.env.example`** (safe to commit):
 ```bash

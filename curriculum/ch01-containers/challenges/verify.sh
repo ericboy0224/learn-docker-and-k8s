@@ -104,9 +104,9 @@ check \
     "curl -sf http://localhost:3000"
 
 check_output \
-    "Response from localhost:3000 contains 'Hello from CloudBrew'" \
+    "Response from localhost:3000 contains 'Hello from NoCappuccino'" \
     "curl -s http://localhost:3000" \
-    "Hello from CloudBrew"
+    "Hello from NoCappuccino"
 
 echo ""
 

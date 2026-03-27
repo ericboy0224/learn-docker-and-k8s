@@ -29,7 +29,7 @@ It's 3:07 AM.
 
 Your phone is going off like a fire alarm. Then your laptop. Then your watch, which you didn't even know had notifications enabled.
 
-The screen glows in the dark: **50,000 concurrent users**. A coffee influencer with 2 million followers posted about CloudBrew's limited-edition Nitro Cold Brew at midnight. The tweet went viral. The post is still going.
+The screen glows in the dark: **50,000 concurrent users**. A coffee influencer with 2 million followers posted about NoCappuccino's limited-edition Nitro Cold Brew at midnight. The tweet went viral. The post is still going.
 
 Your single Docker host is at 100% CPU. The load average looks like a phone number. The app is crawling, then timing out, then — nothing.
 
@@ -134,7 +134,7 @@ Under the hood, Kubernetes networking relies on:
 
 Once all three challenges pass and the verify script goes green, come back here.
 
-You kept CloudBrew alive through the traffic spike. By 4 AM, all 3 replicas were running, self-healing was confirmed, and the influencer's followers were actually able to check out.
+You kept NoCappuccino alive through the traffic spike. By 4 AM, all 3 replicas were running, self-healing was confirmed, and the influencer's followers were actually able to check out.
 
 Dave sent a voice memo at 4:23 AM. You could hear the relief in his voice. "Sarah... you're a wizard. Also — is this kubernetes thing why the coffee machine has been running slow? Never mind. Get some sleep."
 

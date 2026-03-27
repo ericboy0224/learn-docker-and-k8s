@@ -22,7 +22,7 @@ An open-source, AI-driven interactive learning game where users learn Docker, Li
 - **Teaching mode:** AI demonstrates, explains, and shows output
 - **Challenge mode:** AI only gives hints, never runs commands for you
 - **Skip-level quizzes:** If jumping ahead, must pass knowledge check on skipped concepts
-- **Story-driven:** Every chapter has characters, stakes, and humor (CloudBrew startup narrative)
+- **Story-driven:** Every chapter has characters, stakes, and humor (NoCappuccino startup narrative)
 - **Technical terms in English:** Even when AI speaks user's language, use English for Docker/K8s/Linux terminology
 
 ---
@@ -64,9 +64,9 @@ learn-docker-and-k8s/
 
 ---
 
-## Curriculum: The CloudBrew Story
+## Curriculum: The NoCappuccino Story
 
-Players join **CloudBrew**, a cloud-based coffee subscription startup, as a new DevOps engineer. Their mentor **Sarah** (senior dev) guides them while navigating **Dave** (anxious CTO) and **Marcus** (demanding PM).
+Players join **NoCappuccino**, a cloud-based coffee subscription startup, as a new DevOps engineer. Their mentor **Sarah** (senior dev) guides them while navigating **Dave** (anxious CTO) and **Marcus** (demanding PM).
 
 ### Chapter 1: "It Works on My Machine" (Container Basics)
 **Story:** Dave's API works locally but crashes on staging due to version mismatch.
@@ -207,7 +207,7 @@ chapters:
 | 13-docker-debugging-deep-dive.md | Every debugging technique detailed | Ch01/Ch07 challenges |
 | 14-docker-networking-deep-dive.md | Networking concepts exhaustive | Ch04 content |
 | 15-k8squest-game-design-analysis.md | K8sQuest design patterns | Engine design reference |
-| 16-narrative-storyline.md | CloudBrew story with characters | Chapter narratives |
+| 16-narrative-storyline.md | NoCappuccino story with characters | Chapter narratives |
 | 17-production-scenario-bank.md | Production scenarios with exact errors | Ch07 challenges |
 
 ---

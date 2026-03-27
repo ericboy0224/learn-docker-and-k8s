@@ -7,7 +7,7 @@
 
 ## Situation
 
-A new developer, Priya, just joined CloudBrew. She is setting up her local environment to work on the preferences API. Her current workflow: edit a file, rebuild the Docker image, stop the container, start the new container, test. Every single change.
+A new developer, Priya, just joined NoCappuccino. She is setting up her local environment to work on the preferences API. Her current workflow: edit a file, rebuild the Docker image, stop the container, start the new container, test. Every single change.
 
 It takes about 90 seconds per iteration. She made her feelings known in Slack with a series of escalating coffee emoji.
 
@@ -20,11 +20,11 @@ You are going to show her a better way using bind mounts. Edit a file on your ho
 Here is the Node.js app Priya is working on. Create this file at a path of your choice on your host — for example, `~/cloudbrew-app/index.js`:
 
 ```javascript
-// index.js — CloudBrew Preferences API (dev version)
+// index.js — NoCappuccino Preferences API (dev version)
 const http = require('http');
 
 const PORT = 3000;
-const GREETING = 'Welcome to CloudBrew! Your preferences are safe.';
+const GREETING = 'Welcome to NoCappuccino! Your preferences are safe.';
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`CloudBrew API listening on port ${PORT}`);
+  console.log(`NoCappuccino API listening on port ${PORT}`);
 });
 ```
 
@@ -42,7 +42,7 @@ And a `package.json` in the same directory:
 {
   "name": "cloudbrew-api",
   "version": "1.0.0",
-  "description": "CloudBrew customer preferences API",
+  "description": "NoCappuccino customer preferences API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -64,7 +64,7 @@ And a `package.json` in the same directory:
 4. Verify the initial app is working:
    ```bash
    curl http://localhost:3000
-   # → Welcome to CloudBrew! Your preferences are safe.
+   # → Welcome to NoCappuccino! Your preferences are safe.
    ```
 
 5. **Edit `index.js` on your host** — change the `GREETING` string to something different. Save the file.

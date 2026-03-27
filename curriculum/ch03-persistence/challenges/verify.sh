@@ -250,7 +250,7 @@ if [ "$FAILED" -eq 0 ]; then
     echo "All checks passed! Chapter 03 complete!"
     echo "======================================"
     echo ""
-    echo "CloudBrew customer data is safe. Dave is impressed."
+    echo "NoCappuccino customer data is safe. Dave is impressed."
     echo "Run 'bash engine/cleanup.sh' when you're ready to clean up ch03 resources."
     exit 0
 else

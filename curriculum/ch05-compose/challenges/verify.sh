@@ -261,7 +261,7 @@ if [ "$FAILED" -eq 0 ]; then
   green "============================================"
   echo ""
   echo "You built a complete, health-checked, secret-safe Docker Compose"
-  echo "stack for CloudBrew. New developers can now run one command and"
+  echo "stack for NoCappuccino. New developers can now run one command and"
   echo "be productive in minutes."
   echo ""
   echo "That coffee influencer is about to change everything. See you in Chapter 6."

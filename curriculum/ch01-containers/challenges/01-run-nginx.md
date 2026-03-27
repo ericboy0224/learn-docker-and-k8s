@@ -6,7 +6,7 @@
 
 ## The Situation
 
-It's your first hour at CloudBrew. I've shown you the basics. Now I want to see you actually do it.
+It's your first hour at NoCappuccino. I've shown you the basics. Now I want to see you actually do it.
 
 Run an Nginx container so that visiting `http://localhost:8080` in your browser (or `curl http://localhost:8080` in your terminal) returns the Nginx welcome page.
 

@@ -2,7 +2,7 @@
 
 ## Briefing
 
-CloudBrew's app has a frontend and a backend. They run as separate containers. In Docker Compose, they found each other by service name on a shared network. In Kubernetes, the mechanism is different — but the idea is the same.
+NoCappuccino's app has a frontend and a backend. They run as separate containers. In Docker Compose, they found each other by service name on a shared network. In Kubernetes, the mechanism is different — but the idea is the same.
 
 Pods can't rely on IPs (they change), so we use Services. A Service gives the backend a stable DNS name that the frontend can always reach, regardless of how many backend Pods are running or which IPs they have at any given moment.
 
@@ -45,7 +45,7 @@ spec:
         - name: backend
           image: hashicorp/http-echo:latest
           args:
-            - "-text=Hello from CloudBrew backend!"
+            - "-text=Hello from NoCappuccino backend!"
             - "-listen=:5678"
           ports:
             - containerPort: 5678
@@ -123,7 +123,7 @@ The frontend uses `curlimages/curl` with a `sleep` command so it stays running �
 3. Wait for all Pods to be `Running`
 4. Check the Service's Endpoints to confirm it has backend Pod IPs
 5. Exec into the frontend Pod and `curl` the backend using the Service name
-6. You should see the response: `Hello from CloudBrew backend!`
+6. You should see the response: `Hello from NoCappuccino backend!`
 
 ---
 

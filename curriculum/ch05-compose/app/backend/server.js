@@ -81,7 +81,7 @@ app.post('/api/coffees', async (req, res) => {
 initDb()
   .then(() => {
     app.listen(PORT, () => {
-      console.log(`CloudBrew backend listening on port ${PORT}`);
+      console.log(`NoCappuccino backend listening on port ${PORT}`);
       console.log(`  Database: ${process.env.DATABASE_URL ? 'configured' : 'NOT SET'}`);
       console.log(`  Redis:    ${process.env.REDIS_URL ? 'configured' : 'NOT SET'}`);
     });

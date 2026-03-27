@@ -7,7 +7,7 @@
 
 ## Situation
 
-Customer support just escalated ticket #4471 to engineering. A CloudBrew subscriber spent twenty minutes building their perfect coffee profile — origin preferences, roast level, brewing method, grind size — and it all disappeared after Dave's routine maintenance restart.
+Customer support just escalated ticket #4471 to engineering. A NoCappuccino subscriber spent twenty minutes building their perfect coffee profile — origin preferences, roast level, brewing method, grind size — and it all disappeared after Dave's routine maintenance restart.
 
 Dave's response: "I just ran `docker rm` and then `docker run` again. How was I supposed to know that would delete everything?"
 

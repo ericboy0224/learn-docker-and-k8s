@@ -10,7 +10,7 @@ Read `.player/progress.yaml` and present it in a clear, visual format.
 ## Display Format
 
 ```
-=== CloudBrew DevOps Journey ===
+=== NoCappuccino DevOps Journey ===
 
 Chapter 1: It Works on My Machine (Containers)     [COMPLETED]
   Lessons: 3/3  |  Challenges: 3/3

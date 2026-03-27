@@ -7,7 +7,7 @@
 
 ## The Situation
 
-CloudBrew currently has three services: a frontend, a backend API, and a database. Right now, all three are on the same network. That's a security problem.
+NoCappuccino currently has three services: a frontend, a backend API, and a database. Right now, all three are on the same network. That's a security problem.
 
 The correct architecture is a **two-tier network**:
 

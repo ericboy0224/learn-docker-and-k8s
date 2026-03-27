@@ -28,7 +28,7 @@
 
 ## The Story So Far
 
-You did it. The investor demo was a hit. CloudBrew's custom networks are holding, the data is persisting, and Marcus finally stopped asking about the staging server. For about two weeks, everything was quiet.
+You did it. The investor demo was a hit. NoCappuccino's custom networks are holding, the data is persisting, and Marcus finally stopped asking about the staging server. For about two weeks, everything was quiet.
 
 Then the hiring started.
 
@@ -84,7 +84,7 @@ By the end of this chapter, you will be able to:
 
 | # | Challenge | Focus |
 |---|-----------|-------|
-| 01 | [Full Stack](challenges/01-full-stack.md) | Write the complete CloudBrew Compose file |
+| 01 | [Full Stack](challenges/01-full-stack.md) | Write the complete NoCappuccino Compose file |
 | 02 | [Health Checks](challenges/02-health-checks.md) | Fix the startup race condition |
 | 03 | [Secrets and Profiles](challenges/03-secrets-and-profiles.md) | Secure secrets, add dev/test profiles |
 
@@ -110,7 +110,7 @@ Once you complete all three challenges and `verify.sh` passes:
 
 The Compose stack is humming. New developers join, run `docker compose up`, and are productive within minutes. Sarah sleeps soundly. Dave is so impressed he added `docker compose up` to the README in 48pt font.
 
-Then, on a Tuesday afternoon, a coffee influencer with 2 million followers tweets about CloudBrew's single-origin Ethiopian blend.
+Then, on a Tuesday afternoon, a coffee influencer with 2 million followers tweets about NoCappuccino's single-origin Ethiopian blend.
 
 Within 90 minutes, the server CPU is pegged at 100%. Memory alerts are firing. The app is responding in 12 seconds. Marcus is screaming in Slack.
 

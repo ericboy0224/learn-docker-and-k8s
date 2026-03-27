@@ -271,4 +271,4 @@ docker ps --format "table {{.Names}}\t{{.Ports}}"
 
 ---
 
-**Up next:** Challenge time. Let's fix CloudBrew.
+**Up next:** Challenge time. Let's fix NoCappuccino.

@@ -27,7 +27,7 @@ all the way to triaging a Kubernetes production incident at 3 AM.
                           (your mentor)
                                 |
                                 v
-                          "Welcome to CloudBrew!
+                          "Welcome to NoCappuccino!
                            Dave broke staging
                            again. Let's fix it
                            with containers..."
@@ -46,19 +46,19 @@ all the way to triaging a Kubernetes production incident at 3 AM.
 ## The Cast
 
 ```
-  .-------------------------------------------------------.
-  |                                                       |
-  |   (^_^) Sarah       (@_@;) Dave       (-_-) Marcus    |
-  |   Senior DevOps     CTO               Product Mgr     |
-  |   Your mentor       "Just restart it" "Demo is at 3"  |
-  |                                                       |
-  |               CloudBrew Inc.                          |
-  |           "Coffee, code, containers"                  |
-  |                                                       |
-  '-------------------------------------------------------'
+  .-------------------------------------------------------------.
+  |                                                             |
+  |   (^_^) Sarah        (@_@;) Dave        (-_-) Marcus       |
+  |   Senior DevOps      CTO                Product Mgr        |
+  |   Your mentor        "Just restart it"  "Demo is at 3"     |
+  |                                                             |
+  |                  NoCappuccino Inc.                           |
+  |              "Coffee, code, containers"                     |
+  |                                                             |
+  '-------------------------------------------------------------'
 ```
 
-You just joined **CloudBrew**, a fast-growing coffee subscription startup where
+You just joined **NoCappuccino**, a fast-growing coffee subscription startup where
 things are... a bit chaotic. Sarah, your senior DevOps engineer, will guide you
 through the mess. Dave (the CTO) keeps breaking things. Marcus (the PM) keeps
 setting deadlines. The coffee machine breaks as often as production.

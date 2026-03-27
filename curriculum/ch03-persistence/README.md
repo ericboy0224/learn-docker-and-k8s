@@ -20,7 +20,7 @@
 # Chapter 3: The Vanishing Beans
 
 > "I added a new specialty roast to my favorites, but when the server restarted, it was gone!"
-> — CloudBrew customer support ticket #4471
+> — NoCappuccino customer support ticket #4471
 
 ## The Story
 
@@ -34,7 +34,7 @@ Sarah: "...Dave, please tell me you used a volume."
 
 Dave: "A what?"
 
-And just like that, CloudBrew lost three weeks of customer preference data. Every saved favorite roast, every "I hate dark roast" annotation, every carefully curated brewing profile — gone. Poof. Vanished like steam from a cup of espresso.
+And just like that, NoCappuccino lost three weeks of customer preference data. Every saved favorite roast, every "I hate dark roast" annotation, every carefully curated brewing profile — gone. Poof. Vanished like steam from a cup of espresso.
 
 This is *the* classic container mistake. Containers are ephemeral by design — they are meant to be thrown away and recreated. The writable layer inside a container lives and dies with the container itself. If you store your database files there, you are building your house on sand.
 
